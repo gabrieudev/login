@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>Seja bem vindo(a) novamente, faça login para acessar sua conta.</p>
+          <form action="login.js" method="post" autocomplete="on">
+            <div class="campo">
+              <i id="person" class="material-icons">person</i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                maxlength="30"
+                placeholder="Email"
+              />
+              <label for="email">Email:</label>
+            </div>
+            <div class="campo">
+              <i id="key" class="material-icons">key</i>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+                placeholder="Senha"
+              />
+              <label for="senha">Senha:</label>
+            </div>
+            <input type="submit" value="Login" />
+            <a href="esqueci.html" class="botao"> Esqueci a senha </a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
